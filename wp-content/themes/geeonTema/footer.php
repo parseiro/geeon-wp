@@ -1,5 +1,4 @@
 <?php wp_footer(); ?>
-</main>
 <footer class="bg-white dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10">
         <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">

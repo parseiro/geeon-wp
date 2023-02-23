@@ -139,6 +139,3 @@
         </div>
     </nav>
 </header>
-<main class="flex flex-col flex-nowrap justify-between gap-y-6 mt-6 mx-1  items-center">
-    <h1 class="my-4 text-center text-2xl font-serif text-stone-700"><span
-                class="border-y-2"><?php the_title(); ?></span></h1>
