@@ -139,83 +139,9 @@
 <!--<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>-->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-    const STATE_DARK = 'dark';
-    const STATE_NEUTRAL = 'os';
-    const STATE_LIGHT = 'light';
-
-    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-    const themeToggleBtn = document.getElementById('theme-toggle');
 
 
-    function reloadDark() {
-        let dark = localStorage.theme === STATE_DARK ||
-            (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
-        if (dark) {
-            document.documentElement.classList.add('dark');
-            themeToggleDarkIcon.classList.add('hidden')
-            themeToggleLightIcon.classList.remove('hidden');
-        } else {
-            document.documentElement.classList.remove('dark');
-            themeToggleDarkIcon.classList.remove('hidden')
-            themeToggleLightIcon.classList.add('hidden');
-        }
-    }
 
-    reloadDark();
-
-    function setTheme(theme) {
-        // Whenever the user explicitly chooses light mode
-        if (theme === STATE_DARK || theme === STATE_LIGHT) localStorage.theme = theme;
-        else if (theme === STATE_NEUTRAL) delete localStorage.theme;
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-        /*        let state;
-				if (!('theme' in localStorage)) setTheme(STATE_NEUTRAL);*/
-        // else
-        const currentState = localStorage.theme ?? STATE_NEUTRAL;
-        let nextState;
-        switch (currentState) {
-            case STATE_NEUTRAL:
-                if (window.matchMedia('(prefers-color-scheme: dark)').matches) nextState = STATE_LIGHT;
-                else nextState = STATE_DARK;
-                break;
-            case STATE_DARK:
-                nextState = STATE_LIGHT;
-                break;
-            case STATE_LIGHT:
-                nextState = STATE_NEUTRAL;
-                break;
-        }
-        if (nextState) {
-            setTheme(nextState);
-            reloadDark();
-        }
-    });
-
-    tailwind.config = {
-        darkMode: 'class',
-        theme: {
-            extend: {
-                colors: {
-                    primary: {
-                        50: '#FFC9E5',
-                        100: '#FFB4DB',
-                        200: '#FF8BC7',
-                        300: '#FF63B3',
-                        400: '#FF3AA0',
-                        500: '#FF118C',
-                        600: '#D80070',
-                        700: '#A00053',
-                        800: '#680036',
-                        900: '#300019',
-                    },
-                },
-            },
-        },
-        // plugins: [require('flowbite/plugin')],
-    };
 </script>
 <style type="text/tailwindcss">
     @layer components {
