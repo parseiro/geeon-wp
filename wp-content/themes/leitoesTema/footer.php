@@ -343,5 +343,6 @@
 <!--  </script>-->
 <!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
 <!--<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>
 </html>
