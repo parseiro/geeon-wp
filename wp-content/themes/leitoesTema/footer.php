@@ -217,9 +217,17 @@
         },
         // plugins: [require('flowbite/plugin')],
     };
-
-
 </script>
+<style type="text/tailwindcss">
+    @layer components {
+        .item-de-menu-ativo {
+            @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-primary-600 hover:bg-gray-50 dark:border-gray-700 dark:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-primary-500 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
+        }
+        .item-de-menu {
+            @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
+        }
+    }
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>
 </html>
