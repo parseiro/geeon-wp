@@ -3,6 +3,9 @@ const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+/*    corePlugins: {
+        preflight: false,
+    },*/
     content: [
         './*.php',
         './**/*.php',
