@@ -32,6 +32,7 @@ module.exports = {
             '2xl': '1440px'
         }
     },
+    "darkMode": "class",
     plugins: [
         tailpress.tailwind,
         require('flowbite/plugin')
