@@ -136,13 +136,6 @@
 <!--    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')-->
 <!--  </script>-->
 <!--  <script src="https://www.google-analytics.com/analytics.js" async></script>-->
-<!--<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>-->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-
-
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/flowbite163.min.js"></script>
 </body>
 </html>

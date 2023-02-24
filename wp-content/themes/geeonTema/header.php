@@ -15,7 +15,7 @@
     <meta property="og:image" content=""/>
 
     <!--  <link rel="manifest" href="site.webmanifest">-->
-    <link rel="apple-touch-icon" href="icon.png"/>
+<!--    <link rel="apple-touch-icon" href="icon.png"/>-->
     <!-- Place favicon.ico in the root directory -->
 
     <!--    <link
@@ -24,10 +24,9 @@
 		/>-->
     <!--    <link rel="stylesheet" href="css/normalize.css" />-->
     <!--    <link rel="stylesheet" href="css/main.css" />-->
-    <!--    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css"/>-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet"/>
-    <!--<link rel="stylesheet" href="<?php /*echo get_stylesheet_directory_uri(); */ ?>/style.css"/>-->
-
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/flowbite163.min.css"/>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"/>
 
     <!--<meta name="theme-color" content="#fafafa"/>-->
 	<?php wp_head(); ?>
