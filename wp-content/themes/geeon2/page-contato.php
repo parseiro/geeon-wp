@@ -32,8 +32,8 @@
                         </svg>
                     </div>
                     <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Correspondência</p>
-                    <p class="text-gray-500 dark:text-gray-400">Rua XYZ, <span class="whitespace-nowrap">CEP 0101010101</span>, <span class="whitespace-nowrap">Fortaleza-CE-Brasil</span></p>
-                    <p class="font-semibold text-primary-600 dark:text-primary-500">endereco@dominio.com</p>
+                    <p class="text-gray-500 dark:text-gray-400">Rua Papi Júnior, 1511, <span class="whitespace-nowrap">CEP 60430-235</span>, <span class="whitespace-nowrap">Fortaleza-CE-Brasil</span></p>
+                    <p class="font-semibold text-primary-600 dark:text-primary-500">adm@geeon.org</p>
                 </div>
                 <div class="px-7">
                     <div class="flex justify-center items-center mx-auto mb-4 w-10 h-10 bg-gray-100 rounded-lg dark:bg-gray-800 lg:h-16 lg:w-16">
@@ -43,8 +43,8 @@
                         </svg>
                     </div>
                     <p class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Telefone</p>
-                    <p class="text-gray-500 dark:text-gray-400">Ligue para conversar com um membro do time</p>
-                    <p class="font-semibold text-primary-600 dark:text-primary-500">+55 (11) 010101010101</p>
+                    <p class="text-gray-500 dark:text-gray-400">Ligue para tirar dúvidas rápidas</p>
+                    <p class="font-semibold text-primary-600 dark:text-primary-500">+55 (85) 3283-4988</p>
                 </div>
             </div>
             <div class="mb-8 lg:mb-0 pt-8 md:pt-24">
