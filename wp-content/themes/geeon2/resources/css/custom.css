@@ -50,6 +50,12 @@ article > *:not(.entry-content),
         /*.item-de-menu-ativo {*/
         @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
     }
+    #menu-sobre-o-geeon .menu-item {
+        @apply mb-4;
+    }
+    #menu-sobre-o-geeon .menu-item > a {
+        @apply hover:underline;
+    }
     #formulario-contato {
         @apply grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2;
     }

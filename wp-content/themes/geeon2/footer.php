@@ -1,4 +1,3 @@
-
 </main>
 
 <?php do_action( 'tailpress_content_end' ); ?>
@@ -10,131 +9,78 @@
 <footer id="colophon" class="site-footer bg-white dark:bg-gray-800" role="contentinfo">
 	<?php do_action( 'tailpress_footer' ); ?>
 
-	<div class="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+    <div class="mx-auto max-w-screen-xl p-4 py-6 md:p-8 lg:p-10">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
             <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Company</h2>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Sobre nós</h2>
+				<?php
+				wp_nav_menu(
+					array(
+						'menu'           => 'Sobre o GEEON',
+						'menu_class'     => 'text-gray-500 dark:text-gray-400',
+						'theme_location' => 'footer',
+						'container'      => false,
+						'depth'          => 1,
+						'link_before'    => '<span>',
+						'link_after'     => '</span>',
+						'fallback_cb'    => false,
+					)
+				);
+				?>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Atendimento</h2>
                 <ul class="text-gray-500 dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class=" hover:underline">
-                            About
+                        <a href="#" class="hover:underline">
+                            Agendar mamografia
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Careers
+                            Resultado da mamografia
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Brand Center
+                            Serviço de apoio
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Blog
+                            Entre em contato
                         </a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Help center</h2>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Outros</h2>
                 <ul class="text-gray-500 dark:text-gray-400">
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Discord Server
+                            Nosso blog
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Twitter
+                            Links nas redes sociais
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Facebook
+                            Política de privacidade
                         </a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Legal</h2>
-                <ul class="text-gray-500 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Privacy Policy
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Licensing
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Terms
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Company</h2>
-                <ul class="text-gray-500 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="#" class=" hover:underline">
-                            About
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Careers
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Brand Center
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Download</h2>
-                <ul class="text-gray-500 dark:text-gray-400">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            iOS
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Android
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            Windows
-                        </a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline">
-                            MacOS
+                            Termos
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-		&copy; <?php echo date_i18n( 'Y' );?> - <?php echo get_bloginfo( 'name' );?>
-	</div>
+        &copy; <?php echo date_i18n( 'Y' ); ?> - <?php echo get_bloginfo( 'name' ); ?>
+    </div>
 </footer>
 
 </div>
@@ -151,7 +97,7 @@
 
     var themeToggleBtn = document.getElementById('theme-toggle');
 
-    themeToggleBtn.addEventListener('click', function() {
+    themeToggleBtn.addEventListener('click', function () {
 
         // toggle icons inside button
         themeToggleDarkIcon.classList.toggle('hidden');
