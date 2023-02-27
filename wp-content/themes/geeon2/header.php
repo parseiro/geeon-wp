@@ -41,7 +41,7 @@
                     </button>
                     <a
                             href="#"
-                            class="mr-2 rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 lg:px-5 lg:py-2.5"
+                            class="mr-2 rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 lg:px-5 lg:py-2.5 whitespace-nowrap"
                     >
                         Doar agora
                     </a>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" id="mobile-menu-2">
 					<?php
-					add_filter( 'nav_menu_link_attributes', 'nav_menu_link_class', 10, 3 );
+/*					add_filter( 'nav_menu_link_attributes', 'nav_menu_link_class', 10, 3 );
 					function nav_menu_link_class( $atts, $item, $args ) {
 						// check if this item represents the current post
 						if ( in_array( 'current-menu-item', $item->classes ) ) {
@@ -84,14 +84,14 @@
 						}
 
 						return $atts;
-					}
+					}*/
 
 					wp_nav_menu(
 						[
 							'menu'       => 'menu principal',
 							'container'  => false,
 							'menu_class' => "mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8",
-							'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+//							'items_wrap' => '<ul class="%2$s">%3$s</ul>',
 						]
 					);
 					?>
@@ -124,7 +124,7 @@
                         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                             <a
                                     href="#"
-                                    class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-4 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                                    class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-4 py-2.5 text-center text-base font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 whitespace-nowrap"
                             >
                                 Doar agora
                             </a>
@@ -249,7 +249,6 @@
                                 href="#"
                                 class="mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
                         >
-                            Show more...
                         </a>
                     </div>
                 </div>
