@@ -1083,6 +1083,14 @@ input:checked + .toggle-bg {
   color: rgb(255 17 140 / var(--tw-text-opacity)) !important;
 }
 
+#menu-sobre-o-geeon .menu-item {
+  margin-bottom: 1rem;
+}
+
+#menu-sobre-o-geeon .menu-item > a:hover {
+  text-decoration-line: underline;
+}
+
 #formulario-contato {
   margin-left: auto;
   margin-right: auto;

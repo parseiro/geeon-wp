@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
 
@@ -26,7 +26,7 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header>
+    <header>
         <nav class="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
             <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
                 <div class="flex items-center">
@@ -35,9 +35,17 @@
                     <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">GEEON</span>
                 </div>
                 <div class="flex items-center lg:order-2">
-                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <button id="theme-toggle" type="button"
+                            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                  fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
                     </button>
                     <a
                             href="#"
@@ -98,12 +106,12 @@
                 </div>
             </div>
         </nav>
-	</header>
+    </header>
 
-	<div id="content" class="site-content flex-grow">
+    <div id="content" class="site-content flex-grow">
 
 		<?php if ( is_front_page() ) { ?>
-			<!-- Start introduction -->
+            <!-- Start introduction -->
             <section class="bg-white dark:bg-gray-900">
                 <div class="mx-auto max-w-screen-xl py-8 px-4 sm:py-16 lg:px-6">
                     <div class="max-w-screen-md">
@@ -111,14 +119,22 @@
                             Venha conhecer um pouco mais do que nos une
                         </h2>
                         <p class="mb-8 font-light text-gray-500 dark:text-gray-400 sm:text-xl">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-                            nec dui nunc mattis enim ut tellus elementum sagittis. Platea dictumst quisque sagittis purus. Elementum tempus egestas sed sed.
-                            Sem integer vitae justo eget magna. Vitae et leo duis ut. Lacus sed viverra tellus in hac. Aliquet enim tortor at auctor urna
-                            nunc id cursus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Sed nisi lacus sed viverra tellus in hac
-                            habitasse platea. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Fames ac turpis egestas maecenas. Nullam
-                            ac tortor vitae purus faucibus ornare suspendisse. Sed sed risus pretium quam vulputate dignissim suspendisse in. Sem nulla
-                            pharetra diam sit amet nisl suscipit adipiscing bibendum. Enim praesent elementum facilisis leo vel fringilla est. Ante in nibh
-                            mauris cursus mattis. Non nisi est sit amet facilisis magna etiam. Nec nam aliquam sem et. Elementum integer enim neque volutpat
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Enim
+                            nec dui nunc mattis enim ut tellus elementum sagittis. Platea dictumst quisque sagittis
+                            purus. Elementum tempus egestas sed sed.
+                            Sem integer vitae justo eget magna. Vitae et leo duis ut. Lacus sed viverra tellus in hac.
+                            Aliquet enim tortor at auctor urna
+                            nunc id cursus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Sed nisi
+                            lacus sed viverra tellus in hac
+                            habitasse platea. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
+                            Fames ac turpis egestas maecenas. Nullam
+                            ac tortor vitae purus faucibus ornare suspendisse. Sed sed risus pretium quam vulputate
+                            dignissim suspendisse in. Sem nulla
+                            pharetra diam sit amet nisl suscipit adipiscing bibendum. Enim praesent elementum facilisis
+                            leo vel fringilla est. Ante in nibh
+                            mauris cursus mattis. Non nisi est sit amet facilisis magna etiam. Nec nam aliquam sem et.
+                            Elementum integer enim neque volutpat
                             ac tincidunt vitae semper quis.
                         </p>
                         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
@@ -141,21 +157,27 @@
             <section class="bg-white dark:bg-gray-900">
                 <div class="mx-auto max-w-screen-xl py-8 px-4 text-center lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-sm">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Depoimentos</h2>
+                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                            Depoimentos</h2>
                         <p class="mb-8 font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16">
-                            Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind
+                            Explore the whole collection of open-source web components and elements built with the
+                            utility classes from Tailwind
                         </p>
                     </div>
                     <div class="mb-8 grid lg:mb-12 lg:grid-cols-2">
                         <figure class="flex flex-col items-center justify-center border-b border-gray-200 bg-gray-50 p-8 text-center dark:border-gray-700 dark:bg-gray-800 md:p-12 lg:border-r">
                             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Speechless with how easy this was to integrate</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Speechless with how easy
+                                    this was to integrate</h3>
                                 <p class="my-4">
-                                    I recently got my hands on Flowbite Pro, and holy crap, I am speechless with how easy this was to integrate within my
-                                    application. Most templates are a pain, code is scattered, and near impossible to theme.
+                                    I recently got my hands on Flowbite Pro, and holy crap, I am speechless with how
+                                    easy this was to integrate within my
+                                    application. Most templates are a pain, code is scattered, and near impossible to
+                                    theme.
                                 </p>
                                 <p class="my-4">
-                                    Flowbite has code in one place and I am not joking when I say it took me a matter of minutes to copy the code, customise
+                                    Flowbite has code in one place and I am not joking when I say it took me a matter of
+                                    minutes to copy the code, customise
                                     it and integrate within a Laravel + Vue application.
                                 </p>
                                 <p class="my-4">If you care for your time, I hands down would go with this.</p>
@@ -168,20 +190,26 @@
                                 />
                                 <div class="space-y-0.5 text-left font-medium dark:text-white">
                                     <div>Bonnie Green</div>
-                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open AI</div>
+                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open
+                                        AI
+                                    </div>
                                 </div>
                             </figcaption>
                         </figure>
                         <figure class="flex flex-col items-center justify-center border-b border-gray-200 bg-gray-50 p-8 text-center dark:border-gray-700 dark:bg-gray-800 md:p-12">
                             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any
+                                    project</h3>
                                 <p class="my-4">
-                                    FlowBite provides a robust set of design tokens and components based on the popular Tailwind CSS framework. From the most
-                                    used UI components like forms and navigation bars to the whole app screens designed both for desktop and mobile, this UI
+                                    FlowBite provides a robust set of design tokens and components based on the popular
+                                    Tailwind CSS framework. From the most
+                                    used UI components like forms and navigation bars to the whole app screens designed
+                                    both for desktop and mobile, this UI
                                     kit provides a solid foundation for any project.
                                 </p>
                                 <p class="my-4">
-                                    Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!
+                                    Designing with Figma components that can be easily translated to the utility classes
+                                    of Tailwind CSS is a huge timesaver!
                                 </p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center space-x-3">
@@ -192,22 +220,28 @@
                                 />
                                 <div class="space-y-0.5 text-left font-medium dark:text-white">
                                     <div>Roberta Casas</div>
-                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Lead designer at
+                                        Dropbox
+                                    </div>
                                 </div>
                             </figcaption>
                         </figure>
                         <figure class="flex flex-col items-center justify-center border-b border-gray-200 bg-gray-50 p-8 text-center dark:border-gray-700 dark:bg-gray-800 md:p-12 lg:border-b-0 lg:border-r">
                             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow and variants</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow and
+                                    variants</h3>
                                 <p class="my-4">
-                                    As someone who mainly designs in the browser, I have been a casual user of Figma, but as soon as I saw and started playing
+                                    As someone who mainly designs in the browser, I have been a casual user of Figma,
+                                    but as soon as I saw and started playing
                                     with FlowBite my mind was 🤯.
                                 </p>
                                 <p class="my-4">
-                                    Everything is so well structured and simple to use (I have learnt so much about Figma by just using the toolkit).
+                                    Everything is so well structured and simple to use (I have learnt so much about
+                                    Figma by just using the toolkit).
                                 </p>
                                 <p class="my-4">
-                                    Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application.
+                                    Aesthetically, the well designed components are beautiful and will undoubtedly level
+                                    up your next application.
                                 </p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center space-x-3">
@@ -218,18 +252,23 @@
                                 />
                                 <div class="space-y-0.5 text-left font-medium dark:text-white">
                                     <div>Jese Leos</div>
-                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+                                    <div class="text-sm font-light text-gray-500 dark:text-gray-400">Software Engineer
+                                        at Facebook
+                                    </div>
                                 </div>
                             </figcaption>
                         </figure>
                         <figure class="flex flex-col items-center justify-center border-gray-200 bg-gray-50 p-8 text-center dark:border-gray-700 dark:bg-gray-800 md:p-12">
                             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient
+                                    Collaborating</h3>
                                 <p class="my-4">
-                                    This is a very complex and beautiful set of elements. Under the hood it comes with the best things from 2 different
+                                    This is a very complex and beautiful set of elements. Under the hood it comes with
+                                    the best things from 2 different
                                     worlds: Figma and Tailwind.
                                 </p>
-                                <p class="my-4">You have many examples that can be used to create a fast prototype for your team.</p>
+                                <p class="my-4">You have many examples that can be used to create a fast prototype for
+                                    your team.</p>
                             </blockquote>
                             <figcaption class="flex items-center justify-center space-x-3">
                                 <img
@@ -253,9 +292,9 @@
                     </div>
                 </div>
             </section>
-			<!-- End introduction -->
+            <!-- End introduction -->
 		<?php } ?>
 
 		<?php do_action( 'tailpress_content_start' ); ?>
 
-		<main>
+        <main>
