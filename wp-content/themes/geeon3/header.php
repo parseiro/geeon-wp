@@ -102,7 +102,7 @@
                     id="logo-container"
                     class="mr-3 flex h-[5rem] w-[10rem] items-center justify-around"
             >
-                <a href="/">
+                <a href="<?php echo get_site_url(); ?>">
                     <img
                             class="w-full object-cover"
                             src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
