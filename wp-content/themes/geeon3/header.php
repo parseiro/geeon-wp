@@ -81,13 +81,13 @@
                         ></path>
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div class="z-50 hidden w-full md:block md:w-auto" id="navbar-default">
 					<?php
 					wp_nav_menu(
 						[
 							'menu'       => 'Header Superior',
 							'container'  => false,
-							'menu_class' => "mt-4 hidden p-4 text-xl md:mt-0 md:flex md:flex-row md:items-center md:justify-center md:gap-x-8 md:border-0",
+							'menu_class' => "mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:text-lg lg:text-xl",
 						]
 					);
 					?>
@@ -105,22 +105,22 @@
                 <a href="<?php echo get_site_url(); ?>">
                     <img
                             class="w-full object-cover"
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo2.png"
                             alt="Logo do Geeon"
                     />
                 </a>
             </figure>
 
             <div id="navbar-inferior" class="flex items-center justify-between">
-	            <?php
-	            wp_nav_menu(
-		            [
-			            'menu'       => 'Header Inferior',
-			            'container'  => false,
-			            'menu_class' => "mt-4 hidden p-4 text-xl md:mt-0 md:flex md:flex-row md:items-center md:justify-center md:gap-x-8 md:border-0",
-		            ]
-	            );
-	            ?>
+				<?php
+				wp_nav_menu(
+					[
+						'menu'       => 'Header Inferior',
+						'container'  => false,
+						'menu_class' => "@apply mt-4 hidden p-4 text-base md:mt-0 md:block md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0 md:text-lg lg:text-xl;",
+					]
+				);
+				?>
                 <button
                         id="btn-donation"
                         class="ml-[3rem] h-[3.125rem] w-[9.375rem] rounded-lg border border-solid border-rose-default bg-rose-strong text-2xl font-bold text-white hover:cursor-pointer hover:bg-white hover:text-rose-default hover:transition-all"
