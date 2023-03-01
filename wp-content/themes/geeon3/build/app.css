@@ -1578,6 +1578,59 @@ input:checked + .toggle-bg {
   }
 }
 
+.titulo_de_secao {
+  margin-bottom: 3.5rem;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(166 51 82 / var(--tw-text-opacity));
+}
+
+#servicos_medicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  background-color: rgb(242 206 206 / 0.2);
+  --tw-bg-opacity: 0.5;
+}
+
+/*  #servicos_medicos > * {
+        @apply format lg:format-lg;
+      }*/
+
+#servicos_medicos > article {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#servicos_medicos > article > div > h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(166 51 82 / var(--tw-text-opacity));
+}
+
+#servicos_medicos > article > div > p {
+  max-width: 640px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(166 51 82 / var(--tw-text-opacity));
+}
+
+#servicos_medicos > article > img {
+  margin-right: 1.75rem;
+  margin-left: 10px;
+  height: 159px;
+  width: 152px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1789,6 +1842,10 @@ input:checked + .toggle-bg {
   margin-bottom: 3rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1829,6 +1886,10 @@ input:checked + .toggle-bg {
   margin-left: 1.5rem;
 }
 
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
 .ml-\[3rem\] {
   margin-left: 3rem;
 }
@@ -1843,6 +1904,10 @@ input:checked + .toggle-bg {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
 }
 
 .mt-1 {
@@ -1981,20 +2046,16 @@ input:checked + .toggle-bg {
   height: 24rem;
 }
 
+.h-\[159px\] {
+  height: 159px;
+}
+
 .h-\[3\.125rem\] {
   height: 3.125rem;
 }
 
 .h-\[325px\] {
   height: 325px;
-}
-
-.h-\[375px\] {
-  height: 375px;
-}
-
-.h-\[450px\] {
-  height: 450px;
 }
 
 .h-\[5rem\] {
@@ -2101,6 +2162,10 @@ input:checked + .toggle-bg {
 
 .w-\[10rem\] {
   width: 10rem;
+}
+
+.w-\[152px\] {
+  width: 152px;
 }
 
 .w-\[9\.375rem\] {
@@ -2379,6 +2444,10 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[11px\] {
+  gap: 11px;
 }
 
 .gap-x-3 {
@@ -2915,6 +2984,10 @@ input:checked + .toggle-bg {
   background-color: rgb(217 145 158 / var(--tw-bg-opacity));
 }
 
+.bg-rose-smooth {
+  background-color: rgb(242 206 206 / 0.2);
+}
+
 .bg-rose-strong {
   --tw-bg-opacity: 1;
   background-color: rgb(252 4 165 / var(--tw-bg-opacity));
@@ -3382,6 +3455,10 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -3399,6 +3476,11 @@ input:checked + .toggle-bg {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 

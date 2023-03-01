@@ -76,4 +76,31 @@ article > *:not(.entry-content),
     #navbar-default li a, #navbar-inferior li a {
         @apply block rounded-lg py-2 pl-3 pr-4 text-center text-rose-text hover:bg-rose-strong hover:text-white hover:transition-all md:border-0;
     }
+
+    .titulo_de_secao {
+        @apply mb-14 text-7xl font-bold text-rose-default;
+    }
+
+    #servicos_medicos {
+        @apply flex flex-col items-center justify-center gap-[11px] bg-rose-smooth bg-opacity-50;
+    }
+
+    /*  #servicos_medicos > * {
+        @apply format lg:format-lg;
+      }*/
+    #servicos_medicos > article {
+        @apply mb-10 flex items-center justify-center;
+    }
+
+    #servicos_medicos > article > div > h3 {
+        @apply text-2xl font-bold text-rose-default;
+    }
+
+    #servicos_medicos > article > div > p {
+        @apply max-w-screen-sm text-2xl text-rose-text;
+    }
+
+    #servicos_medicos > article > img {
+        @apply mr-7 ml-[10px] h-[159px] w-[152px];
+    }
 }

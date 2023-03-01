@@ -134,14 +134,6 @@
 
     <div id="content" class="site-content flex-grow">
 
-        <?php if ( is_front_page() ) { ?>
-            <!-- Start introduction -->
-            <section class="h-[325px] bg-rose-background2 bg-opacity-50"></section>
-            <section class="h-[450px]"></section>
-            <section class="h-[375px]"></section>
-            <!-- End introduction -->
-	    <?php } ?>
-
 		<?php do_action( 'tailpress_content_start' ); ?>
 
         <main>
