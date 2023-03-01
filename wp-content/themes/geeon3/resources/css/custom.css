@@ -3,59 +3,7 @@ article > *:not(.entry-content),
     @apply mx-auto max-w-content;
 }
 
-.entry-content, .block-editor-block-list__layout {
-    h1 {
-        @apply text-2xl;
-    }
-
-    h2 {
-        @apply text-xl;
-    }
-
-    h3 {
-        @apply text-lg;
-    }
-
-    p, ul, ol {
-        a {
-            @apply text-blue-500 underline;
-
-            &:hover {
-                @apply no-underline;
-            }
-        }
-
-        @apply mb-8;
-    }
-
-    ul:not(.block-editor-block-variation-picker__variations) {
-        li {
-            @apply list-disc list-inside;
-        }
-    }
-
-    ol {
-        li {
-            @apply list-decimal list-inside;
-        }
-    }
-}
-
 @layer components {
-    #menu-menu-principal .menu-item {
-    /*.item-de-menu {*/
-        @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
-    }
-    #menu-menu-principal .current-menu-item {
-        /*.item-de-menu-ativo {*/
-        @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
-    }
-    #menu-sobre-o-geeon .menu-item {
-        @apply mb-4;
-    }
-    #menu-sobre-o-geeon .menu-item > a {
-        @apply hover:underline;
-    }
     #formulario-contato {
         @apply grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2;
     }
@@ -114,5 +62,18 @@ article > *:not(.entry-content),
     }
     .screen-reader-response {
         @apply hidden;
+    }
+/*    #menu-menu-principal .menu-item {
+        !*.item-de-menu {*!
+        @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
+    }
+
+    #menu-menu-principal .current-menu-item {
+        !*.item-de-menu-ativo {*!
+        @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
+    }*/
+
+    #navbar-default li a, #navbar-inferior li a {
+        @apply block rounded-lg py-2 pl-3 pr-4 text-center text-rose-text hover:bg-rose-strong hover:text-white hover:transition-all md:border-0;
     }
 }
