@@ -1,0 +1,118 @@
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto max-w-content;
+}
+
+.entry-content, .block-editor-block-list__layout {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-lg;
+    }
+
+    p, ul, ol {
+        a {
+            @apply text-blue-500 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+@layer components {
+    #menu-menu-principal .menu-item {
+    /*.item-de-menu {*/
+        @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
+    }
+    #menu-menu-principal .current-menu-item {
+        /*.item-de-menu-ativo {*/
+        @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
+    }
+    #menu-sobre-o-geeon .menu-item {
+        @apply mb-4;
+    }
+    #menu-sobre-o-geeon .menu-item > a {
+        @apply hover:underline;
+    }
+    #formulario-contato {
+        @apply grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2;
+    }
+    #formulario-contato > p {
+        @apply [&:nth-child(6)]:sm:col-span-2;
+    }
+    #formulario-contato br {
+        @apply inline leading-[0];
+    }
+    .name-label {
+        @apply block text-sm font-medium text-gray-900 dark:text-gray-300;
+    }
+    .name-input {
+        @apply mt-2 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light;
+    }
+    .email-label {
+        @apply name-label;
+    }
+    .email-input {
+        @apply name-input;
+    }
+    .tel-label {
+        @apply name-label;
+    }
+    .tel-input {
+        @apply name-input;
+    }
+    .subject-label {
+        @apply name-label;
+    }
+    .subject-input {
+        @apply block mt-2 p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light;
+    }
+    p.message-label {
+        @apply sm:col-span-2;
+    }
+    .message-label {
+        @apply name-label;
+    }
+    .message-textarea {
+        @apply block mt-2 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500;
+    }
+    .submit-button {
+        @apply py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800;
+    }
+    /* mensagens de erro de validação */
+    .wpcf7-not-valid-tip {
+        @apply mt-2 text-sm text-red-600 dark:text-red-500;
+        @apply block;
+    }
+    .wpcf7-response-output {
+        @apply wpcf7-not-valid-tip border text-base;
+    }
+    .wpcf7-not-valid {
+        @apply bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400;
+    }
+    .screen-reader-response {
+        @apply hidden;
+    }
+}
