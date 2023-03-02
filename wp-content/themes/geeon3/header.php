@@ -58,7 +58,7 @@
                             alt="youtube-icon"
                     /></a>
             </div>
-            <div class="flex w-screen flex-wrap items-center justify-between">
+            <div class="flex w-screen flex-wrap items-center justify-end">
                 <button
                         data-collapse-toggle="navbar-default"
                         aria-controls="navbar-default"

@@ -1765,6 +1765,25 @@ input:checked + .toggle-bg {
   --tw-format-invert-links: #3b82f6;
 }
 
+body {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0px;
+  }
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  background-color: rgb(242 206 206 / 0.2);
+  --tw-bg-opacity: .15;
+}
+
 #formulario-contato {
   margin-left: auto;
   margin-right: auto;
@@ -1790,16 +1809,6 @@ input:checked + .toggle-bg {
 }
 
 /* mensagens de erro de validação */
-
-/*    #menu-menu-principal .menu-item {
-            !*.item-de-menu {*!
-            @apply block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-primary-500;
-        }
-
-        #menu-menu-principal .current-menu-item {
-            !*.item-de-menu-ativo {*!
-            @apply !text-primary-600 dark:!text-primary-500 dark:hover:!text-primary-500;
-        }*/
 
 #navbar-default li a, #navbar-inferior li a {
   display: block;
@@ -1830,43 +1839,12 @@ input:checked + .toggle-bg {
   }
 }
 
-.titulo_de_secao {
-  /*@apply text-3xl font-bold  md:text-7xl;*/
-  margin-bottom: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgb(166 51 82 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .titulo_de_secao {
-    margin-bottom: 3.5rem;
-  }
-}
-
-#servicos_medicos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 11px;
-}
-
-/*  #servicos_medicos > * {
-        @apply format lg:format-lg;
-      }*/
-
-#servicos_medicos > article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#servicos_medicos > article > div {
+.secao {
   color: var(--tw-format-body);
   max-width: 65ch;
 }
 
-#servicos_medicos > article > div :where([class~="lead"]):not(:where([class~="not-format"] *)) {
+.secao :where([class~="lead"]):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-lead);
   font-size: 1.25em;
   line-height: 1.6;
@@ -1874,100 +1852,100 @@ input:checked + .toggle-bg {
   margin-bottom: 1.2em;
 }
 
-#servicos_medicos > article > div :where(a):not(:where([class~="not-format"] *)) {
+.secao :where(a):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-links);
   text-decoration: underline;
   font-weight: 500;
 }
 
-#servicos_medicos > article > div :where(a):not(:where([class~="not-format"] *)):hover {
+.secao :where(a):not(:where([class~="not-format"] *)):hover {
   text-decoration: none;
 }
 
-#servicos_medicos > article > div :where(strong):not(:where([class~="not-format"] *)) {
+.secao :where(strong):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-bold);
   font-weight: 700;
 }
 
-#servicos_medicos > article > div :where(a strong):not(:where([class~="not-format"] *)) {
+.secao :where(a strong):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(blockquote strong):not(:where([class~="not-format"] *)) {
+.secao :where(blockquote strong):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(thead th strong):not(:where([class~="not-format"] *)) {
+.secao :where(thead th strong):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(ol):not(:where([class~="not-format"] *)) {
+.secao :where(ol):not(:where([class~="not-format"] *)) {
   list-style-type: decimal;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   padding-left: 1.625em;
 }
 
-#servicos_medicos > article > div :where(ol[type="A"]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="A"]):not(:where([class~="not-format"] *)) {
   list-style-type: upper-alpha;
 }
 
-#servicos_medicos > article > div :where(ol[type="a"]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="a"]):not(:where([class~="not-format"] *)) {
   list-style-type: lower-alpha;
 }
 
-#servicos_medicos > article > div :where(ol[type="A" s]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="A" s]):not(:where([class~="not-format"] *)) {
   list-style-type: upper-alpha;
 }
 
-#servicos_medicos > article > div :where(ol[type="a" s]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="a" s]):not(:where([class~="not-format"] *)) {
   list-style-type: lower-alpha;
 }
 
-#servicos_medicos > article > div :where(ol[type="I"]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="I"]):not(:where([class~="not-format"] *)) {
   list-style-type: upper-roman;
 }
 
-#servicos_medicos > article > div :where(ol[type="i"]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="i"]):not(:where([class~="not-format"] *)) {
   list-style-type: lower-roman;
 }
 
-#servicos_medicos > article > div :where(ol[type="I" s]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="I" s]):not(:where([class~="not-format"] *)) {
   list-style-type: upper-roman;
 }
 
-#servicos_medicos > article > div :where(ol[type="i" s]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="i" s]):not(:where([class~="not-format"] *)) {
   list-style-type: lower-roman;
 }
 
-#servicos_medicos > article > div :where(ol[type="1"]):not(:where([class~="not-format"] *)) {
+.secao :where(ol[type="1"]):not(:where([class~="not-format"] *)) {
   list-style-type: decimal;
 }
 
-#servicos_medicos > article > div :where(ul):not(:where([class~="not-format"] *)) {
+.secao :where(ul):not(:where([class~="not-format"] *)) {
   list-style-type: disc;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   padding-left: 1.625em;
 }
 
-#servicos_medicos > article > div :where(ol > li):not(:where([class~="not-format"] *))::marker {
+.secao :where(ol > li):not(:where([class~="not-format"] *))::marker {
   font-weight: 400;
   color: var(--tw-format-counters);
 }
 
-#servicos_medicos > article > div :where(ul > li):not(:where([class~="not-format"] *))::marker {
+.secao :where(ul > li):not(:where([class~="not-format"] *))::marker {
   color: var(--tw-format-bullets);
 }
 
-#servicos_medicos > article > div :where(hr):not(:where([class~="not-format"] *)) {
+.secao :where(hr):not(:where([class~="not-format"] *)) {
   border-color: var(--tw-format-hr);
   border-top-width: 1px;
   margin-top: 3em;
   margin-bottom: 3em;
 }
 
-#servicos_medicos > article > div :where(blockquote):not(:where([class~="not-format"] *)) {
+.secao :where(blockquote):not(:where([class~="not-format"] *)) {
   font-size: 1.1111111em;
   font-weight: 700;
   font-style: italic;
@@ -1976,7 +1954,7 @@ input:checked + .toggle-bg {
   margin-bottom: 1.6em;
 }
 
-#servicos_medicos > article > div :where(blockquote):not(:where([class~="not-format"] *))::before {
+.secao :where(blockquote):not(:where([class~="not-format"] *))::before {
   content: "";
   background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='24' viewBox='0 0 32 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.6893 24V14.1453C18.6893 6.54 23.664 1.38533 30.6667 -7.15256e-07L31.9933 2.868C28.7507 4.09066 26.6667 7.71867 26.6667 10.6667H32V24H18.6893ZM-9.53674e-07 24V14.1453C-9.53674e-07 6.54 4.99733 1.384 12 -7.15256e-07L13.328 2.868C10.084 4.09066 8 7.71867 8 10.6667L13.3107 10.6667V24H-9.53674e-07Z' fill='%239CA3AF'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -1987,15 +1965,15 @@ input:checked + .toggle-bg {
   margin-top: 1.6em;
 }
 
-#servicos_medicos > article > div :where(blockquote p:first-of-type):not(:where([class~="not-format"] *))::before {
+.secao :where(blockquote p:first-of-type):not(:where([class~="not-format"] *))::before {
   content: open-quote;
 }
 
-#servicos_medicos > article > div :where(blockquote p:last-of-type):not(:where([class~="not-format"] *))::after {
+.secao :where(blockquote p:last-of-type):not(:where([class~="not-format"] *))::after {
   content: close-quote;
 }
 
-#servicos_medicos > article > div :where(h1):not(:where([class~="not-format"] *)) {
+.secao :where(h1):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-headings);
   font-weight: 800;
   font-size: 2.25em;
@@ -2004,12 +1982,12 @@ input:checked + .toggle-bg {
   line-height: 1.1111111;
 }
 
-#servicos_medicos > article > div :where(h1 strong):not(:where([class~="not-format"] *)) {
+.secao :where(h1 strong):not(:where([class~="not-format"] *)) {
   font-weight: 900;
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(h2):not(:where([class~="not-format"] *)) {
+.secao :where(h2):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-headings);
   font-weight: 700;
   font-size: 1.5em;
@@ -2018,12 +1996,12 @@ input:checked + .toggle-bg {
   line-height: 1.3333333;
 }
 
-#servicos_medicos > article > div :where(h2 strong):not(:where([class~="not-format"] *)) {
+.secao :where(h2 strong):not(:where([class~="not-format"] *)) {
   font-weight: 800;
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(h3):not(:where([class~="not-format"] *)) {
+.secao :where(h3):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-headings);
   font-weight: 700;
   font-size: 1.25em;
@@ -2032,12 +2010,12 @@ input:checked + .toggle-bg {
   line-height: 1.6;
 }
 
-#servicos_medicos > article > div :where(h3 strong):not(:where([class~="not-format"] *)) {
+.secao :where(h3 strong):not(:where([class~="not-format"] *)) {
   font-weight: 800;
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(h4):not(:where([class~="not-format"] *)) {
+.secao :where(h4):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-headings);
   font-weight: 600;
   margin-top: 0;
@@ -2045,29 +2023,29 @@ input:checked + .toggle-bg {
   line-height: 1.5;
 }
 
-#servicos_medicos > article > div :where(h4 strong):not(:where([class~="not-format"] *)) {
+.secao :where(h4 strong):not(:where([class~="not-format"] *)) {
   font-weight: 700;
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(img):not(:where([class~="not-format"] *)) {
+.secao :where(img):not(:where([class~="not-format"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-#servicos_medicos > article > div :where(figure > *):not(:where([class~="not-format"] *)) {
+.secao :where(figure > *):not(:where([class~="not-format"] *)) {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#servicos_medicos > article > div :where(figcaption):not(:where([class~="not-format"] *)) {
+.secao :where(figcaption):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-captions);
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
 }
 
-#servicos_medicos > article > div :where(code):not(:where([class~="not-format"] *)) {
+.secao :where(code):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-code);
   font-weight: 600;
   background-color: var(--tw-format-code-bg);
@@ -2079,37 +2057,37 @@ input:checked + .toggle-bg {
   font-size: 0.875em;
 }
 
-#servicos_medicos > article > div :where(a code):not(:where([class~="not-format"] *)) {
+.secao :where(a code):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(h1 code):not(:where([class~="not-format"] *)) {
+.secao :where(h1 code):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(h2 code):not(:where([class~="not-format"] *)) {
+.secao :where(h2 code):not(:where([class~="not-format"] *)) {
   color: inherit;
   font-size: 0.875em;
 }
 
-#servicos_medicos > article > div :where(h3 code):not(:where([class~="not-format"] *)) {
+.secao :where(h3 code):not(:where([class~="not-format"] *)) {
   color: inherit;
   font-size: 0.9em;
 }
 
-#servicos_medicos > article > div :where(h4 code):not(:where([class~="not-format"] *)) {
+.secao :where(h4 code):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(blockquote code):not(:where([class~="not-format"] *)) {
+.secao :where(blockquote code):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(thead th code):not(:where([class~="not-format"] *)) {
+.secao :where(thead th code):not(:where([class~="not-format"] *)) {
   color: inherit;
 }
 
-#servicos_medicos > article > div :where(pre):not(:where([class~="not-format"] *)) {
+.secao :where(pre):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-pre-code);
   background-color: var(--tw-format-pre-bg);
   overflow-x: auto;
@@ -2125,7 +2103,7 @@ input:checked + .toggle-bg {
   padding-left: 1.1428571em;
 }
 
-#servicos_medicos > article > div :where(pre code):not(:where([class~="not-format"] *)) {
+.secao :where(pre code):not(:where([class~="not-format"] *)) {
   background-color: transparent;
   border-width: 0;
   border-radius: 0;
@@ -2137,15 +2115,15 @@ input:checked + .toggle-bg {
   line-height: inherit;
 }
 
-#servicos_medicos > article > div :where(pre code):not(:where([class~="not-format"] *))::before {
+.secao :where(pre code):not(:where([class~="not-format"] *))::before {
   content: none;
 }
 
-#servicos_medicos > article > div :where(pre code):not(:where([class~="not-format"] *))::after {
+.secao :where(pre code):not(:where([class~="not-format"] *))::after {
   content: none;
 }
 
-#servicos_medicos > article > div :where(table):not(:where([class~="not-format"] *)) {
+.secao :where(table):not(:where([class~="not-format"] *)) {
   width: 100%;
   table-layout: auto;
   text-align: left;
@@ -2155,12 +2133,12 @@ input:checked + .toggle-bg {
   line-height: 1.7142857;
 }
 
-#servicos_medicos > article > div :where(thead):not(:where([class~="not-format"] *)) {
+.secao :where(thead):not(:where([class~="not-format"] *)) {
   background-color: var(--tw-format-th-bg);
   border-radius: 0.2777778em;
 }
 
-#servicos_medicos > article > div :where(thead th):not(:where([class~="not-format"] *)) {
+.secao :where(thead th):not(:where([class~="not-format"] *)) {
   color: var(--tw-format-headings);
   font-weight: 600;
   vertical-align: bottom;
@@ -2170,29 +2148,29 @@ input:checked + .toggle-bg {
   padding-left: 0.5714286em;
 }
 
-#servicos_medicos > article > div :where(tbody tr):not(:where([class~="not-format"] *)) {
+.secao :where(tbody tr):not(:where([class~="not-format"] *)) {
   border-bottom-width: 1px;
   border-bottom-color: var(--tw-format-td-borders);
 }
 
-#servicos_medicos > article > div :where(tbody tr:last-child):not(:where([class~="not-format"] *)) {
+.secao :where(tbody tr:last-child):not(:where([class~="not-format"] *)) {
   border-bottom-width: 0;
 }
 
-#servicos_medicos > article > div :where(tbody td):not(:where([class~="not-format"] *)) {
+.secao :where(tbody td):not(:where([class~="not-format"] *)) {
   vertical-align: baseline;
 }
 
-#servicos_medicos > article > div :where(tfoot):not(:where([class~="not-format"] *)) {
+.secao :where(tfoot):not(:where([class~="not-format"] *)) {
   border-top-width: 1px;
   border-top-color: var(--tw-format-th-borders);
 }
 
-#servicos_medicos > article > div :where(tfoot td):not(:where([class~="not-format"] *)) {
+.secao :where(tfoot td):not(:where([class~="not-format"] *)) {
   vertical-align: top;
 }
 
-#servicos_medicos > article > div {
+.secao {
   --tw-format-body: #6b7280;
   --tw-format-headings: #111827;
   --tw-format-lead: #6b7280;
@@ -2233,209 +2211,423 @@ input:checked + .toggle-bg {
   line-height: 1.75;
 }
 
-#servicos_medicos > article > div :where(p):not(:where([class~="not-format"] *)) {
+.secao :where(p):not(:where([class~="not-format"] *)) {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
 }
 
-#servicos_medicos > article > div :where(blockquote > p:first-child):not(:where([class~="not-format"] *)) {
+.secao :where(blockquote > p:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(video):not(:where([class~="not-format"] *)) {
+.secao :where(video):not(:where([class~="not-format"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-#servicos_medicos > article > div :where(figure):not(:where([class~="not-format"] *)) {
+.secao :where(figure):not(:where([class~="not-format"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-#servicos_medicos > article > div :where(li):not(:where([class~="not-format"] *)) {
+.secao :where(li):not(:where([class~="not-format"] *)) {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-#servicos_medicos > article > div :where(ol > li):not(:where([class~="not-format"] *)) {
+.secao :where(ol > li):not(:where([class~="not-format"] *)) {
   padding-left: 0.375em;
 }
 
-#servicos_medicos > article > div :where(ul > li):not(:where([class~="not-format"] *)) {
+.secao :where(ul > li):not(:where([class~="not-format"] *)) {
   padding-left: 0.375em;
 }
 
-#servicos_medicos > article > div :where(.format > ul > li p):not(:where([class~="not-format"] *)) {
+.secao :where(.format > ul > li p):not(:where([class~="not-format"] *)) {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-#servicos_medicos > article > div :where(.format > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.25em;
 }
 
-#servicos_medicos > article > div :where(.format > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.25em;
 }
 
-#servicos_medicos > article > div :where(.format > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.25em;
 }
 
-#servicos_medicos > article > div :where(.format > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.25em;
 }
 
-#servicos_medicos > article > div :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-format"] *)) {
+.secao :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-format"] *)) {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-#servicos_medicos > article > div :where(hr + *):not(:where([class~="not-format"] *)) {
+.secao :where(hr + *):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(h2 + *):not(:where([class~="not-format"] *)) {
+.secao :where(h2 + *):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(h3 + *):not(:where([class~="not-format"] *)) {
+.secao :where(h3 + *):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(h4 + *):not(:where([class~="not-format"] *)) {
+.secao :where(h4 + *):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(thead th:last-child):not(:where([class~="not-format"] *)) {
+.secao :where(thead th:last-child):not(:where([class~="not-format"] *)) {
   padding-right: 0;
 }
 
-#servicos_medicos > article > div :where(tbody td, tfoot td):not(:where([class~="not-format"] *)) {
+.secao :where(tbody td, tfoot td):not(:where([class~="not-format"] *)) {
   padding-top: 0.5714286em;
   padding-right: 0.5714286em;
   padding-bottom: 0.5714286em;
   padding-left: 0.5714286em;
 }
 
-#servicos_medicos > article > div :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-format"] *)) {
+.secao :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-format"] *)) {
   padding-right: 0;
 }
 
-#servicos_medicos > article > div :where(.format > :first-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > :first-child):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-#servicos_medicos > article > div :where(.format > :last-child):not(:where([class~="not-format"] *)) {
+.secao :where(.format > :last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 0;
 }
 
-.format-sm :where(#servicos_medicos > article > div > ul > li p):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > ul > li p):not(:where([class~="not-format"] *)) {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-.format-sm :where(#servicos_medicos > article > div > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1em;
 }
 
-.format-sm :where(#servicos_medicos > article > div > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1em;
 }
 
-.format-sm :where(#servicos_medicos > article > div > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1em;
 }
 
-.format-sm :where(#servicos_medicos > article > div > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1em;
 }
 
-.format-sm :where(#servicos_medicos > article > div > :first-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > :first-child):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-.format-sm :where(#servicos_medicos > article > div > :last-child):not(:where([class~="not-format"] *)) {
+.format-sm :where(.secao > :last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 0;
 }
 
-.format-base :where(#servicos_medicos > article > div > ul > li p):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > ul > li p):not(:where([class~="not-format"] *)) {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
-.format-base :where(#servicos_medicos > article > div > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.25em;
 }
 
-.format-base :where(#servicos_medicos > article > div > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.25em;
 }
 
-.format-base :where(#servicos_medicos > article > div > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.25em;
 }
 
-.format-base :where(#servicos_medicos > article > div > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.25em;
 }
 
-.format-base :where(#servicos_medicos > article > div > :first-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > :first-child):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-.format-base :where(#servicos_medicos > article > div > :last-child):not(:where([class~="not-format"] *)) {
+.format-base :where(.secao > :last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 0;
 }
 
-.format-lg :where(#servicos_medicos > article > div > ul > li p):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > ul > li p):not(:where([class~="not-format"] *)) {
   margin-top: 0.8888889em;
   margin-bottom: 0.8888889em;
 }
 
-.format-lg :where(#servicos_medicos > article > div > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.3333333em;
 }
 
-.format-lg :where(#servicos_medicos > article > div > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.3333333em;
 }
 
-.format-lg :where(#servicos_medicos > article > div > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
   margin-top: 1.3333333em;
 }
 
-.format-lg :where(#servicos_medicos > article > div > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 1.3333333em;
 }
 
-.format-lg :where(#servicos_medicos > article > div > :first-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > :first-child):not(:where([class~="not-format"] *)) {
   margin-top: 0;
 }
 
-.format-lg :where(#servicos_medicos > article > div > :last-child):not(:where([class~="not-format"] *)) {
+.format-lg :where(.secao > :last-child):not(:where([class~="not-format"] *)) {
   margin-bottom: 0;
 }
 
-#servicos_medicos > article > div > h3 {
-  /*@apply text-2xl font-bold;*/
-  --tw-text-opacity: 1;
-  color: rgb(166 51 82 / var(--tw-text-opacity));
+@media (min-width: 1024px) {
+  .secao {
+    font-size: 1.125rem;
+    line-height: 1.7777778;
+  }
+
+  .secao :where(p):not(:where([class~="not-format"] *)) {
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+  }
+
+  .secao :where([class~="lead"]):not(:where([class~="not-format"] *)) {
+    font-size: 1.2222222em;
+    line-height: 1.4545455;
+    margin-top: 1.0909091em;
+    margin-bottom: 1.0909091em;
+  }
+
+  .secao :where(blockquote):not(:where([class~="not-format"] *))::before {
+    margin-top: 1.6666667em;
+  }
+
+  .secao :where(blockquote > p:first-child):not(:where([class~="not-format"] *)) {
+    margin-top: 0.5em;
+  }
+
+  .secao :where(h1):not(:where([class~="not-format"] *)) {
+    font-size: 2.6666667em;
+    margin-top: 0;
+    margin-bottom: 0.8333333em;
+    line-height: 1;
+  }
+
+  .secao :where(h2):not(:where([class~="not-format"] *)) {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0.6666667em;
+    line-height: 1.3333333;
+  }
+
+  .secao :where(h3):not(:where([class~="not-format"] *)) {
+    font-size: 1.3333333em;
+    margin-top: 0;
+    margin-bottom: 0.6666667em;
+    line-height: 1.5;
+  }
+
+  .secao :where(h4):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+    margin-bottom: 0.4444444em;
+    line-height: 1.5555556;
+  }
+
+  .secao :where(img):not(:where([class~="not-format"] *)) {
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  .secao :where(video):not(:where([class~="not-format"] *)) {
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  .secao :where(figure):not(:where([class~="not-format"] *)) {
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+  }
+
+  .secao :where(figure > *):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .secao :where(figcaption):not(:where([class~="not-format"] *)) {
+    font-size: 0.8888889em;
+    line-height: 1.5;
+    margin-top: 1em;
+  }
+
+  .secao :where(code):not(:where([class~="not-format"] *)) {
+    font-size: 0.8888889em;
+  }
+
+  .secao :where(h2 code):not(:where([class~="not-format"] *)) {
+    font-size: 0.8666667em;
+  }
+
+  .secao :where(h3 code):not(:where([class~="not-format"] *)) {
+    font-size: 0.875em;
+  }
+
+  .secao :where(pre):not(:where([class~="not-format"] *)) {
+    font-size: 0.8888889em;
+    line-height: 1.75;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 0.375rem;
+    padding-top: 1em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+  }
+
+  .secao :where(ol):not(:where([class~="not-format"] *)) {
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+    padding-left: 1.5555556em;
+  }
+
+  .secao :where(ul):not(:where([class~="not-format"] *)) {
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+    padding-left: 1.5555556em;
+  }
+
+  .secao :where(li):not(:where([class~="not-format"] *)) {
+    margin-top: 0.6666667em;
+    margin-bottom: 0.6666667em;
+  }
+
+  .secao :where(ol > li):not(:where([class~="not-format"] *)) {
+    padding-left: 0.4444444em;
+  }
+
+  .secao :where(ul > li):not(:where([class~="not-format"] *)) {
+    padding-left: 0.4444444em;
+  }
+
+  .secao :where(.format > ul > li p):not(:where([class~="not-format"] *)) {
+    margin-top: 0.8888889em;
+    margin-bottom: 0.8888889em;
+  }
+
+  .secao :where(.format > ul > li > *:first-child):not(:where([class~="not-format"] *)) {
+    margin-top: 1.3333333em;
+  }
+
+  .secao :where(.format > ul > li > *:last-child):not(:where([class~="not-format"] *)) {
+    margin-bottom: 1.3333333em;
+  }
+
+  .secao :where(.format > ol > li > *:first-child):not(:where([class~="not-format"] *)) {
+    margin-top: 1.3333333em;
+  }
+
+  .secao :where(.format > ol > li > *:last-child):not(:where([class~="not-format"] *)) {
+    margin-bottom: 1.3333333em;
+  }
+
+  .secao :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-format"] *)) {
+    margin-top: 0.8888889em;
+    margin-bottom: 0.8888889em;
+  }
+
+  .secao :where(hr):not(:where([class~="not-format"] *)) {
+    margin-top: 3.1111111em;
+    margin-bottom: 3.1111111em;
+  }
+
+  .secao :where(hr + *):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+  }
+
+  .secao :where(h2 + *):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+  }
+
+  .secao :where(h3 + *):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+  }
+
+  .secao :where(h4 + *):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+  }
+
+  .secao :where(table):not(:where([class~="not-format"] *)) {
+    font-size: 0.8888889em;
+    line-height: 1.5;
+  }
+
+  .secao :where(thead th):not(:where([class~="not-format"] *)) {
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  .secao :where(thead th:last-child):not(:where([class~="not-format"] *)) {
+    padding-right: 0;
+  }
+
+  .secao :where(tbody td, tfoot td):not(:where([class~="not-format"] *)) {
+    padding-top: 0.75em;
+    padding-right: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  .secao :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-format"] *)) {
+    padding-right: 0;
+  }
+
+  .secao :where(.format > :first-child):not(:where([class~="not-format"] *)) {
+    margin-top: 0;
+  }
+
+  .secao :where(.format > :last-child):not(:where([class~="not-format"] *)) {
+    margin-bottom: 0;
+  }
 }
 
-#servicos_medicos > article > div > p {
+.secao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.secao p {
   /*@apply max-w-screen-sm text-2xl text-rose-text;*/
   /*@apply format;*/
   --tw-text-opacity: 1;
   color: rgb(166 51 82 / var(--tw-text-opacity));
 }
 
-#servicos_medicos > article > img {
+.secao > img {
   display: none;
 }
 
 @media (min-width: 768px) {
-  #servicos_medicos > article > img {
+  .secao > img {
     margin: 1.75rem;
     display: block;
     height: 159px;
@@ -2840,10 +3032,6 @@ input:checked + .toggle-bg {
 
 .h-\[3\.125rem\] {
   height: 3.125rem;
-}
-
-.h-\[325px\] {
-  height: 325px;
 }
 
 .h-\[5rem\] {
@@ -4230,10 +4418,6 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -4464,6 +4648,11 @@ input:checked + .toggle-bg {
 .text-red-900 {
   --tw-text-opacity: 1;
   color: rgb(119 29 29 / var(--tw-text-opacity));
+}
+
+.text-rose-default {
+  --tw-text-opacity: 1;
+  color: rgb(166 51 82 / var(--tw-text-opacity));
 }
 
 .text-white {

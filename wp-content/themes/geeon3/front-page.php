@@ -2,22 +2,46 @@
 
 <?php if ( is_front_page() ) { ?>
     <!-- Start introduction -->
-    <section class="h-[325px] bg-rose-background2 bg-opacity-50"></section>
     <div
-            class="flex flex-col items-center gap-y-10 bg-rose-smooth bg-opacity-50"
+            class="flex flex-col items-center gap-y-10 bg-rose-background2 bg-opacity-50"
     >
-        <section id="servicos_medicos">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/outubro rosa.png" alt="Logo da Geeon"/>
-            <div class="format lg:format-lg">
-                <h2 class="titulo_de_secao">Serviços Médicos do Geeon</h2>
+        <section id="missao" class="secao">
+            <article class="flex flex-col items-center justify-center">
+                <img
+                        src="<?php echo get_stylesheet_directory_uri(); ?>/img/outubro rosa.png"
+                        alt="Logo da Geeon"
+                        class="not-format"
+                />
+                <div>
+                    <h2 class="text-rose-default">Nossa Missão</h2>
+                </div>
+                <div>
+                    <p>
+                        Foco na prevenção e diagnóstico precoce do câncer de mama, atuar
+                        junto à sociedade acadêmica, científica, profissionais de saúde
+                        e usuários do SUS e melhorar a qualidade de vida da população.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <div class="flex flex-col items-center gap-y-10 bg-rose-smooth bg-opacity-50">
+        <section id="servicos_medicos" class="secao">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/outubro rosa.png"
+                 alt="Logo da Geeon"
+                 class="not-format"/>
+            <div>
+                <h2 class="text-rose-default">Serviços Médicos do Geeon</h2>
             </div>
-            <article>
+            <article class="flex items-center justify-center">
                 <img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/img/mamografia.png"
                         alt="imagem sobre exames de mamografia"
+                        class="not-format"
                 />
                 <div>
-                    <h3>Mamografia</h3>
+                    <h3 class="text-rose-default">Mamografia</h3>
                     <p>
                         A mamografia é um exame radiológico feito nas mamas. Possui alta
                         resolução e fornece imagens detalhadas capazes de identificar
@@ -28,9 +52,9 @@
                     </p>
                 </div>
             </article>
-            <article>
-                <div class="md:ht">
-                    <h3>Consulta com médico mastologista</h3>
+            <article class="flex items-center justify-center">
+                <div class="md:text-right">
+                    <h3 class="text-rose-default">Consulta com mastologista</h3>
                     <p>
                         A mastologia é a especialidade médica que cuida das glândulas
                         mamárias. Portanto, tudo o que for relacionado com as mamas é
@@ -44,10 +68,13 @@
                         alt="imagem sobre consulta com mastologista"
                 />
             </article>
-            <article>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/biopsia.png" alt="imagem sobre biópsia"/>
+            <article class="flex items-center justify-center">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/biopsia.png"
+                     alt="imagem sobre biópsia"
+                     class="not-format"
+                />
                 <div>
-                    <h3>Biópsia</h3>
+                    <h3 class="text-rose-default">Biópsia</h3>
                     <p>
                         A biópsia é um exame que consiste na retirada de um fragmento de
                         uma parte do corpo (biópsia incisional) ou mesmo de um órgão ou
@@ -56,9 +83,9 @@
                     </p>
                 </div>
             </article>
-            <article>
+            <article class="flex items-center justify-center">
                 <div class="md:text-right">
-                    <h3>Ecografia das mamas</h3>
+                    <h3 class="text-rose-default">Ecografia de mamas</h3>
                     <p>
                         A ultrassonografia ou ecografia é um método diagnóstico muito
                         recorrente na medicina moderna que utiliza o eco gerado através de
@@ -70,6 +97,7 @@
                 <img
                         src="<?php echo get_stylesheet_directory_uri(); ?>/img/us-mamas.png"
                         alt="imagem sobre ultrasson mamárias"
+                        class="not-format"
                 />
             </article>
         </section>

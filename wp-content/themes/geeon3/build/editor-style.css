@@ -2575,10 +2575,6 @@
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2839,6 +2835,11 @@
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(99 49 18 / var(--tw-text-opacity));
+}
+
+.text-rose-default {
+  --tw-text-opacity: 1;
+  color: rgb(166 51 82 / var(--tw-text-opacity));
 }
 
 .underline {
