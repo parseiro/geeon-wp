@@ -25,7 +25,7 @@
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumb-cancer-fight.png"
                     alt="thumb-cancer-fight"
-                    class="hidden md:col-span-4 md:block md:max-h-[325px] md:place-self-end md:object-scale-down h-full w-auto"
+                    class="hidden md:w-auto md:col-span-4 md:block md:h-[325px] md:place-self-end md:object-scale-down"
             />
         </div>
     </section>
@@ -34,7 +34,7 @@
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-icon.png"
                     alt="Logo da Geeon"
-                    class="not-format"
+                    class="not-format h-16 m-2"
             />
             <div class="flex flex-col items-center formatar margenzinha">
                 <h2>Nossa Missão</h2>
@@ -55,7 +55,7 @@
         <img
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-icon.png"
                 alt="Logo da Geeon"
-                class="not-format"
+                class="not-format h-16 m-2"
         />
         <div class="formatar">
             <h2>Serviços Médicos do Geeon</h2>
@@ -66,7 +66,7 @@
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/mamografia.png"
                     alt="imagem sobre exames de mamografia"
-                    class="not-format"
+                    class="not-format m-7 hidden h-40 md:block"
             />
             <div class="formatar flex flex-col md:items-start">
                 <h3>Mamografia</h3>
@@ -94,13 +94,14 @@
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/mastologista.png"
                     alt="imagem sobre consulta com mastologista"
+                    class="not-format m-7 hidden h-40 md:block"
             />
         </article>
         <article class="margenzinha flex w-full items-center justify-center">
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/biopsia.png"
                     alt="imagem sobre biópsia"
-                    class="not-format"
+                    class="not-format m-7 hidden h-40 md:block"
             />
             <div class="formatar flex flex-col md:items-start">
                 <h3>Biópsia</h3>
@@ -125,8 +126,8 @@
             </div>
             <img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/us-mamas.png"
-                    alt="imagem sobre ultrasson mamárias"
-                    class="not-format"
+                    alt="imagem sobre ultrasson de mamas"
+                    class="not-format m-7 hidden h-40 md:block"
             />
         </article>
     </section>

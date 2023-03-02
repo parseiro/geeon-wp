@@ -104,16 +104,11 @@
         @apply text-rose-text;
     }
 
-    .secao > img,
-    .secao > article > img {
-        @apply hidden md:m-7 md:block md:h-[159px] md:w-[152px];
-    }
-
     .margenzinha {
         @apply px-2 md:px-0;
     }
 
-    main > * {
+/*    main > * {
         @apply py-5;
-    }
+    }*/
 }
