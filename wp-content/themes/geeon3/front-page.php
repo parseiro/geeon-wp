@@ -8,7 +8,7 @@
     <section id="missao" class="secao ">
         <article class="margenzinha flex flex-col items-center justify-between">
             <img
-                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/outubro rosa.png"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-icon.png"
                     alt="Logo da Geeon"
                     class="not-format"
             />
@@ -29,7 +29,7 @@
     </section>
     <section id="servicos_medicos" class="secao margenzinha">
         <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/img/outubro rosa.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-icon.png"
                 alt="Logo da Geeon"
                 class="not-format"
         />
@@ -90,12 +90,12 @@
         </article>
         <article class="margenzinha flex w-full items-center justify-center">
             <div class="formatar flex flex-col md:items-end md:text-right">
-                <h3>Ecografia de mamas</h3>
+                <h3>Ultrassonografia de mamas</h3>
                 <p>
                     A ultrassonografia ou ecografia é um método diagnóstico muito
                     recorrente na medicina moderna que utiliza o eco gerado através de
                     ondas ultrassônicas de alta frequência para visualizar, em tempo
-                    real. No ano de 2022 foram realizadas 775 Ecografias
+                    real. No ano de 2022 foram realizadas 775 Ultrassonografias
                     Mamárias
                 </p>
             </div>
