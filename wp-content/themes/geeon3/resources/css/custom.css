@@ -5,8 +5,7 @@ article > *:not(.entry-content),
 
 @layer components {
     body {
-        @apply px-3 md:p-0;
-        @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15;
+        @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15 antialiased;
     }
 
     #formulario-contato {
@@ -92,17 +91,25 @@ article > *:not(.entry-content),
     }
 
     .secao {
-        @apply format lg:format-lg;
-        @apply flex flex-col items-center justify-center gap-[11px]  py-10;
+        @apply flex flex-col items-center justify-center gap-y-[10px];
     }
 
-    .secao p {
-        /*@apply max-w-screen-sm text-2xl text-rose-text;*/
-        /*@apply format;*/
+    .formatar {
+        @apply format lg:format-lg;
+    }
+
+    .secao p,
+    .secao h2,
+    .secao h3 {
         @apply text-rose-text;
     }
 
-    .secao > img {
+    .secao > img,
+    .secao > article > img {
         @apply hidden md:m-7 md:block md:h-[159px] md:w-[152px];
+    }
+
+    .margenzinha {
+        @apply px-2 md:px-0;
     }
 }

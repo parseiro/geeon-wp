@@ -84,7 +84,7 @@
 </footer>
 
 </div>
-<script>
+<!--<script>
     const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
@@ -125,8 +125,8 @@
         }
 
     });
-</script>
-<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

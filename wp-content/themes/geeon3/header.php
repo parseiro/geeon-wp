@@ -18,7 +18,7 @@
     </script>
 </head>
 
-<body <?php body_class( 'antialiased' ); ?>>
+<body>
 
 <?php do_action( 'tailpress_site_before' ); ?>
 
