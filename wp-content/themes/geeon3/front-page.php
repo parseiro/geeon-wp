@@ -52,7 +52,7 @@
                     precocemente o câncer de mama, antes mesmo que a mulher tenha
                     sintomas. Estima-se que de 1 a cada 10 mulheres desenvolvem o
                     câncer de mama em algum momento da vida. No ano de 2022 foram
-                    realizadas 8.768 mamografias
+                    realizadas 8.768 mamografias.
                 </p>
             </div>
         </article>
@@ -64,7 +64,7 @@
                     mamárias. Portanto, tudo o que for relacionado com as mamas é
                     tratado pelo médico mastologista. Isso inclui quaisquer condições
                     que possam afetar os seios, como dores, inchaços, infecções e,
-                    claro, o câncer. No ano de 2022 foram realizadas 7.091 consultas
+                    claro, o câncer. No ano de 2022 foram realizadas 7.091 consultas.
                 </p>
             </div>
             <img
@@ -84,7 +84,7 @@
                     A biópsia é um exame que consiste na retirada de um fragmento de
                     uma parte do corpo (biópsia incisional) ou mesmo de um órgão ou
                     lesão como um todo (biópsia excisional). No ano de 2022 foram
-                    realizadas 908 Biópsia e punções
+                    realizadas 908 Biópsia e punções.
                 </p>
             </div>
         </article>
@@ -96,7 +96,7 @@
                     recorrente na medicina moderna que utiliza o eco gerado através de
                     ondas ultrassônicas de alta frequência para visualizar, em tempo
                     real. No ano de 2022 foram realizadas 775 Ultrassonografias
-                    Mamárias
+                    Mamárias.
                 </p>
             </div>
             <img
