@@ -16,6 +16,7 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: { sans: ["Roboto Condensed", "sans-serif"] },
     container: {
       padding: {
         DEFAULT: "1rem",
