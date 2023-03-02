@@ -117,7 +117,7 @@
 					[
 						'menu'       => 'Header Inferior',
 						'container'  => false,
-						'menu_class' => "@apply mt-4 hidden p-4 text-base md:mt-0 md:block md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0 md:text-lg lg:text-xl;",
+						'menu_class' => "mt-4 hidden p-4 text-base md:mt-0 md:block md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0 md:text-lg lg:text-xl;",
 					]
 				);
 				?>

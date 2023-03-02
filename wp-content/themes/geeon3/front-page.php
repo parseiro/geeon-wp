@@ -1,10 +1,34 @@
 <?php get_header(); ?>
 
 <?php if ( is_front_page() ) { ?>
-    <!-- Start introduction -->
-    <section
-            class="secao h-[325px] w-full bg-rose-background2 bg-opacity-50"
-    ></section>
+    <!-- Banner -->
+    <section class="secao">
+        <div
+                class="margenzinha h-full w-full overflow-clip bg-rose-background2 bg-opacity-50 py-10 md:grid md:grid-cols-12 md:place-content-between md:p-0"
+        >
+            <div class="flex flex-col items-center justify-center md:col-span-8">
+                <div class="relative border-blue-700">
+                    <!--            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/GEE%20N.svg" alt="GEEON" class="relative" />
+							  <img
+								src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-icon.png"
+								alt=""
+								class="absolute left-[130px] top-[-20px] w-[90px]"
+							  />-->
+                    <img
+                            src="<?php echo get_stylesheet_directory_uri(); ?>/img/na-luta.svg"
+                            alt=""
+                            class="relative w-full max-w-[538px]"
+                    />
+                </div>
+                <!--<a href="#">Saiba mais</a>-->
+            </div>
+            <img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/thumb-cancer-fight.png"
+                    alt="thumb-cancer-fight"
+                    class="hidden md:col-span-4 md:block md:max-h-[325px] md:place-self-end md:object-scale-down h-full w-auto"
+            />
+        </div>
+    </section>
     <section id="missao" class="secao ">
         <article class="margenzinha flex flex-col items-center justify-between">
             <img
