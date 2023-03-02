@@ -2,9 +2,9 @@
 
 <?php if ( is_front_page() ) { ?>
     <!-- Banner -->
-    <section class="secao">
+    <section class="secao bg-rose-background2 bg-opacity-50">
         <div
-                class="margenzinha h-full w-full overflow-clip bg-rose-background2 bg-opacity-50 py-10 md:grid md:grid-cols-12 md:place-content-between md:p-0"
+                class="margenzinha h-full w-full overflow-clip py-10 md:grid md:grid-cols-12 md:place-content-between md:p-0"
         >
             <div class="flex flex-col items-center justify-center md:col-span-8">
                 <div class="relative border-blue-700">
