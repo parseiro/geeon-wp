@@ -8,10 +8,8 @@ module.exports = {
         },*/
   content: [
     "./*.php",
-    "./**/*.php",
-    "./resources/css/*.css",
-    "./resources/js/*.js",
-    "./safelist.txt",
+    "./resources/**/*.{php,js,html,ts,jsx,tsx}",
+    // "./safelist.txt",
     "node_modules/flowbite/**/*.{js,jsx,ts,tsx}",
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
@@ -72,5 +70,9 @@ module.exports = {
                         }*/
   },
   darkMode: "class",
-  plugins: [tailpress.tailwind, require("flowbite/plugin")],
+  plugins: [
+    tailpress.tailwind,
+    require("flowbite/plugin"),
+    require("flowbite-typography"),
+  ],
 };

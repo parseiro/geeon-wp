@@ -28,7 +28,7 @@
 
     <header>
         <!-- Primeiro header -->
-        <nav class="mx-auto flex h-16 flex-nowrap items-center justify-between bg-rose-background2 bg-opacity-50 px-4 py-0 shadow-lg md:px-6">
+        <nav class="mx-auto flex items-center justify-between bg-rose-background2 bg-opacity-50 py-0 shadow-lg md:h-16 md:px-4">
             <div class="hidden gap-x-3 md:block md:flex md:items-center md:justify-between md:gap-x-6">
                 <a
                         href="#"
@@ -58,7 +58,7 @@
                             alt="youtube-icon"
                     /></a>
             </div>
-            <div class="flex items-center justify-between">
+            <div class="flex w-screen flex-wrap items-center justify-between">
                 <button
                         data-collapse-toggle="navbar-default"
                         aria-controls="navbar-default"
@@ -81,13 +81,13 @@
                         ></path>
                     </svg>
                 </button>
-                <div class="z-50 hidden w-full md:block md:w-auto" id="navbar-default">
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
 					<?php
 					wp_nav_menu(
 						[
 							'menu'       => 'Header Superior',
 							'container'  => false,
-							'menu_class' => "mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:text-lg lg:text-xl",
+							'menu_class' => "mt-4 flex flex-col p-4 text-lg md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-lg lg:text-xl",
 						]
 					);
 					?>
