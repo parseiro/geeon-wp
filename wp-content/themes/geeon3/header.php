@@ -22,7 +22,7 @@
 
 <?php do_action( 'tailpress_site_before' ); ?>
 
-<div id="page" class="min-h-screen mx-auto max-w-screen-xl bg-rose-background bg-opacity-15">
+<div id="page" class="min-h-screen w-screen bg-rose-background bg-opacity-15">
 
 	<?php do_action( 'tailpress_header' ); ?>
 
@@ -47,15 +47,6 @@
                             class="drop-shadow-sm hover:transition-all"
                             src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.svg"
                             alt="facebook-icon"
-                    /></a>
-                <a
-                        href="#"
-                        aria-label="Youtube"
-                        class="flex items-center justify-center"
-                ><img
-                            class="drop-shadow-sm hover:transition-all"
-                            src="<?php echo get_stylesheet_directory_uri(); ?>/img/youtube.svg"
-                            alt="youtube-icon"
                     /></a>
             </div>
             <div class="flex w-screen flex-wrap items-center justify-end">

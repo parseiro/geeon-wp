@@ -5,7 +5,7 @@
 
 @layer components {
     body {
-        @apply mx-auto max-w-screen-xl bg-rose-smooth bg-opacity-15 antialiased;
+        @apply w-screen bg-rose-smooth bg-opacity-15 antialiased;
     }
 
     #formulario-contato {
