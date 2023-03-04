@@ -46,10 +46,30 @@
             </div>
         </article>
     </section>
-    <section class="secao h-[375px] w-full bg-rose-smooth bg-opacity-20">
-        <div class="formatar">
-            <h2>Números</h2>
+    <section class="secao margenzinha w-screen bg-rose-smooth bg-opacity-20">
+        <div
+                class="flex w-screen flex-col items-center justify-evenly gap-5 md:flex-row md:items-start md:py-5"
+        >
+            <div class="card-values">
+                <span>1</span>
+                <p>Em cada 8 mulheres no mundo terá câncer de mama.</p>
+            </div>
+
+            <div class="card-values">
+                <span>2</span>
+                <p>Em cada 8 mulheres no mundo terá câncer de mama.</p>
+            </div>
+
+            <div class="card-values">
+                <span>75%</span>
+                <p>
+                    Da população brasileira não tem plano de saúde e depende
+                    exclusivamente do SUS.
+                </p>
+            </div>
         </div>
+    </section>
+    </div>
     </section>
     <section id="servicos_medicos" class="secao margenzinha">
         <img
