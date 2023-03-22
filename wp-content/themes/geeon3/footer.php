@@ -28,7 +28,7 @@
 				);
 				?>
             </div>
-            <div>
+            <?php /*<div>
                 <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Atendimento</h2>
                 <ul class="text-gray-500 dark:text-gray-400">
                     <li class="mb-4">
@@ -52,8 +52,8 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div>
+            </div>*/
+            /*<div>
                 <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Outros</h2>
                 <ul class="text-gray-500 dark:text-gray-400">
                     <li class="mb-4">
@@ -77,7 +77,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> */ ?>
         </div>
         &copy; <?php echo date_i18n( 'Y' ); ?> - <?php echo get_bloginfo( 'name' ); ?>
     </div>
@@ -126,7 +126,7 @@
 
     });
 </script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

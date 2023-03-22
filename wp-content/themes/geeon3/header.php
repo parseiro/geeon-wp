@@ -22,7 +22,7 @@
 
 <?php do_action( 'tailpress_site_before' ); ?>
 
-<div id="page" class="min-h-screen w-screen bg-rose-background bg-opacity-15">
+<div id="page" class="min-h-screen w-full bg-rose-background bg-opacity-15">
 
 	<?php do_action( 'tailpress_header' ); ?>
 
@@ -49,7 +49,7 @@
                             alt="facebook-icon"
                     /></a>
             </div>
-            <div class="flex w-screen flex-wrap items-center justify-end">
+            <div class="flex w-full flex-wrap items-center justify-end">
                 <button
                         data-collapse-toggle="navbar-default"
                         aria-controls="navbar-default"
@@ -87,7 +87,7 @@
         </nav>
         <!-- Segundo header -->
         <div
-                class="mx-auto flex h-24 max-w-screen-xl flex-nowrap items-center justify-between px-4 py-2.5 shadow md:px-6"
+                class="mx-auto flex h-24 w-full flex-nowrap items-center justify-between px-4 py-2.5 shadow md:px-6"
         >
             <figure
                     id="logo-container"
@@ -104,13 +104,13 @@
 
             <div id="navbar-inferior" class="flex items-center justify-between">
 				<?php
-				wp_nav_menu(
+				/*wp_nav_menu(
 					[
 						'menu'       => 'Header Inferior',
 						'container'  => false,
 						'menu_class' => "mt-4 hidden p-4 text-base md:mt-0 md:block md:flex md:flex-row md:items-center md:justify-center md:space-x-8 md:border-0 md:text-lg lg:text-xl;",
 					]
-				);
+				);*/
 				?>
                 <button
                         id="btn-donation"

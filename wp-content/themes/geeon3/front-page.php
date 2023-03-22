@@ -46,9 +46,9 @@
             </div>
         </article>
     </section>
-    <section class="secao margenzinha w-screen bg-rose-smooth bg-opacity-20">
+    <section class="secao margenzinha w-full bg-rose-smooth bg-opacity-20">
         <div
-                class="flex w-screen flex-col items-center justify-evenly gap-5 md:flex-row md:items-start md:py-5"
+                class="flex w-full flex-col items-center justify-evenly gap-5 md:flex-row md:items-start md:py-5"
         >
             <div class="card-values">
                 <span>1</span>
@@ -151,17 +151,17 @@
             />
         </article>
     </section>
-    <section class="secao h-[375px] bg-rose-smooth bg-opacity-20">
+    <?php /* <section class="secao h-[375px] bg-rose-smooth bg-opacity-20">
         <div class="formatar">
             <h2>Diagnósticos positivos</h2>
         </div>
-    </section>
-    <section class="secao h-[375px]">
+    </section> */ ?>
+    <?php /* <section class="secao h-[375px]">
         <div class="formatar">
             <h2>Sino da vitória</h2>
         </div>
-    </section>
-    <section class="secao bg-black">
+    </section> */ ?>
+    <?php /* <section class="secao bg-black">
         <div class="formatar">
             <h2>Notícias</h2>
         </div>
@@ -311,7 +311,8 @@
             </span>
             </button>
         </div>
-    </section>
+    </section> */
+    ?>
     <!-- End introduction -->
 <?php } ?>
 
