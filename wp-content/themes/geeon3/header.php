@@ -112,13 +112,13 @@
 					]
 				);*/
 				?>
-                <button
+                <?php /*<button
                         id="btn-donation"
                         class="ml-[3rem] h-[3.125rem] w-[9.375rem] rounded-lg border border-solid border-rose-default bg-rose-strong text-2xl font-bold text-white hover:cursor-pointer hover:bg-white hover:text-rose-default hover:transition-all"
                         type="button"
                 >
                     DOAR
-                </button>
+                </button>*/ ?>
             </div>
         </div>
     </header>
