@@ -108,7 +108,7 @@ p.message-label {
 }
 
 .card-values {
-    @apply formatar max-w-[12rem] text-center font-bold text-rose-strong;
+    @apply formatar !max-w-xs text-center font-bold text-rose-strong;
 }
 
 .card-values > span {
